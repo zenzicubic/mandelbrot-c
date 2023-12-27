@@ -17,7 +17,7 @@ int test(float a, float b) {
         float bt = 2 * a * b;
         a = at + oa;
         b = bt + ob;
-        if (fabs(a + b) > 3) break;
+        if (a * a + b * b > 9) break;
         i ++;
     }
     return i;
